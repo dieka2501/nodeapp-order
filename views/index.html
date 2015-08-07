@@ -27,6 +27,23 @@
  				}
  			});
  		});
+		$(this).keydown(function(event){
+			var key = event.which;
+			if(key == 13){
+				var username = $('#user').val();
+				var password = $('#pass').val();
+				$.post('/login',{
+					'user':username,
+					'pass':password
+
+				},function(data){
+					console.log(data);
+					if(data.status){
+						window.location="/admin";
+					}
+				});
+			}
+		})
  	});
  	</script>
 </html>

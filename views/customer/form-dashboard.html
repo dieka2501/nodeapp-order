@@ -1,29 +1,40 @@
-<form action='/produk/add/do' method="POST" name='frm-produk' id='frm-produk'>
+<h1>Add Customer</h1>
+<form action='/customer/add/do' method="POST" name='frm-customer' id='frm-customer'>
 	<div class="row">
 		<div class="col-md-6">
 			<div class="form-group">
-				<label>Nama Produk</label>
-				<input name='nama_produk' id='nama_produk' class='form-control'/>
+				<label>Nama Lengkap</label>
+				<input name='nama_lengkap' id='nama_lengkap' class='form-control'/>
 			</div>
 		</div>
 		<div class="col-md-6">
 			<div class="form-group">
-				<label>Stock</label>
-				<input name='stock' id='stock' class='form-control'/>
+				<label>Email</label>
+				<input name='email' id='email' class='form-control'/>
 			</div>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-6">
 			<div class="form-group">
-				<label>Harga</label>
-				<input name='harga' id='harga' class='form-control'/>
+				<label>Alamat</label>
+				<textarea name="alamat" id="alamat" class="form-control" cols="3"></textarea>
 			</div>
 		</div>
 		<div class="col-md-6">
 			<div class="form-group">
-				<label>Berat</label>
-				<input name='berat' id='berat' class='form-control'/>
+				<label>Jenis Kelamin</label>
+				<div class="radio">
+					<label>
+						<input type='radio' name='jk' id='jk' class='form-control' value="l"/>Laki-laki
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type='radio' name='jk' id='jk' class='form-control' value="p"/>Perempuan
+					</label>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -31,6 +42,7 @@
 		<div class="col-md-12">
 			<div class="form-group">
 				<button class='btn btn-primary'>Save</button>
+				<a href="#" class="btn btn-danger">Back</a>
 			</div>
 		</div>
 	</div>

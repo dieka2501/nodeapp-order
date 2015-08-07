@@ -220,7 +220,15 @@ app.get('/delete',function(req,res){
 });
 //Customer 
 app.get('/customer',function(req,res){
-	if(session.login != true){
+	if(session.login){
+		res.redirect('/');
+	}
+	var opt = {'content':'customer/list.html'}
+	res.render('template.html',opt);
+});
+
+app.get('/customer',function(req,res){
+	if(session.login){
 		res.redirect('/');
 	}
 	var opt = {'content':'customer/list.html'}
