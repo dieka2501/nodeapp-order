@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Node JS</title>
+	</head>
+	<body>
+		<p><h1>Login</h1></p>
+		<form name='frm-js' method="POST" action="<%= url %>about">
+			<p>Username : <input type="text" name='user' id='user'></p>
+			<p>Password : <input type="password" name='pass' id='pass'></p>
+			<p><button type='button' id='btn-send'>Kirim</button></p>
+		</form>
+ 	</body>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ 	<script type="text/javascript">
+ 	$(document).ready(function(){
+ 		$('#btn-send').click(function(){
+ 			var username = $('#user').val();
+ 			var password = $('#pass').val();
+ 			$.post('/login',{
+ 				'user':username,
+ 				'pass':password
+
+ 			},function(data){
+ 				console.log(data);
+ 				if(data.status){
+ 					window.location="/admin";
+ 				}
+ 			});
+ 		});
+ 	});
+ 	</script>
+</html>

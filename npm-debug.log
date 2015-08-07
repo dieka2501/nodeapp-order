@@ -1,0 +1,252 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mongoskin' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /home/dikdik/nodeapp/package.json
+5 warn package.json Express-web-app@1.0.0 No description
+6 warn package.json Express-web-app@1.0.0 No repository field.
+7 warn package.json Express-web-app@1.0.0 No README data
+8 warn package.json Express-web-app@1.0.0 No license field.
+9 verbose installManyTop reading scoped package data from /home/dikdik/nodeapp/node_modules/body-parser/package.json
+10 verbose installManyTop reading scoped package data from /home/dikdik/nodeapp/node_modules/ejs/package.json
+11 verbose installManyTop reading scoped package data from /home/dikdik/nodeapp/node_modules/express/package.json
+12 verbose installManyTop reading scoped package data from /home/dikdik/nodeapp/node_modules/express-session/package.json
+13 verbose installManyTop reading scoped package data from /home/dikdik/nodeapp/node_modules/mongodb/package.json
+14 verbose installManyTop reading scoped package data from /home/dikdik/nodeapp/node_modules/mongoskin/package.json
+15 info package.json ejs@1.0.0 No license field.
+16 verbose readDependencies loading dependencies from /home/dikdik/nodeapp/package.json
+17 verbose install mongoskin is installed as 1.4.13
+18 silly cache add args [ 'mongoskin', null ]
+19 verbose cache add spec mongoskin
+20 silly cache add parsed spec { raw: 'mongoskin',
+20 silly cache add   scope: null,
+20 silly cache add   name: 'mongoskin',
+20 silly cache add   rawSpec: '',
+20 silly cache add   spec: '*',
+20 silly cache add   type: 'range' }
+21 silly addNamed mongoskin@*
+22 verbose addNamed "*" is a valid semver range for mongoskin
+23 silly addNameRange { name: 'mongoskin', range: '*', hasData: false }
+24 silly mapToRegistry name mongoskin
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry uri https://registry.npmjs.org/mongoskin
+28 verbose addNameRange registry:https://registry.npmjs.org/mongoskin not in flight; fetching
+29 verbose request uri https://registry.npmjs.org/mongoskin
+30 verbose request no auth needed
+31 info attempt registry request try #1 at 14:42:27
+32 verbose request id f5a16d3660e00ab6
+33 verbose etag "2EQ4ZD85HAITTLOG34QY1YAIK"
+34 http request GET https://registry.npmjs.org/mongoskin
+35 http 304 https://registry.npmjs.org/mongoskin
+36 silly get cb [ 304,
+36 silly get   { date: 'Wed, 29 Jul 2015 07:42:29 GMT',
+36 silly get     via: '1.1 varnish',
+36 silly get     'cache-control': 'max-age=60',
+36 silly get     etag: '"2EQ4ZD85HAITTLOG34QY1YAIK"',
+36 silly get     age: '57',
+36 silly get     connection: 'keep-alive',
+36 silly get     'x-served-by': 'cache-lax1425-LAX',
+36 silly get     'x-cache': 'HIT',
+36 silly get     'x-cache-hits': '1',
+36 silly get     'x-timer': 'S1438155749.152285,VS0,VE0',
+36 silly get     vary: 'Accept' } ]
+37 verbose etag https://registry.npmjs.org/mongoskin from cache
+38 verbose get saving mongoskin to /home/dikdik/.npm/registry.npmjs.org/mongoskin/.cache.json
+39 silly addNameRange number 2 { name: 'mongoskin', range: '*', hasData: true }
+40 silly addNameRange versions [ 'mongoskin',
+40 silly addNameRange   [ '0.1.0',
+40 silly addNameRange     '0.1.1',
+40 silly addNameRange     '0.1.2',
+40 silly addNameRange     '0.1.3',
+40 silly addNameRange     '0.2.0',
+40 silly addNameRange     '0.2.1',
+40 silly addNameRange     '0.2.2',
+40 silly addNameRange     '0.2.3',
+40 silly addNameRange     '0.3.0',
+40 silly addNameRange     '0.3.3',
+40 silly addNameRange     '0.3.4',
+40 silly addNameRange     '0.3.5',
+40 silly addNameRange     '0.3.6',
+40 silly addNameRange     '0.3.7',
+40 silly addNameRange     '0.4.0',
+40 silly addNameRange     '0.4.1',
+40 silly addNameRange     '0.4.2',
+40 silly addNameRange     '0.4.3',
+40 silly addNameRange     '0.4.4',
+40 silly addNameRange     '0.5.0',
+40 silly addNameRange     '0.6.0',
+40 silly addNameRange     '0.6.1',
+40 silly addNameRange     '1.3.20-alpha',
+40 silly addNameRange     '1.3.20',
+40 silly addNameRange     '1.3.21',
+40 silly addNameRange     '1.3.22',
+40 silly addNameRange     '1.3.23',
+40 silly addNameRange     '1.4.0',
+40 silly addNameRange     '1.4.1',
+40 silly addNameRange     '1.4.2',
+40 silly addNameRange     '1.4.3',
+40 silly addNameRange     '1.4.4',
+40 silly addNameRange     '1.4.10-beta',
+40 silly addNameRange     '1.4.10',
+40 silly addNameRange     '1.4.11',
+40 silly addNameRange     '1.4.12',
+40 silly addNameRange     '1.4.13' ] ]
+41 silly addNamed mongoskin@1.4.13
+42 verbose addNamed "1.4.13" is a plain semver version for mongoskin
+43 silly cache afterAdd mongoskin@1.4.13
+44 verbose afterAdd /home/dikdik/.npm/mongoskin/1.4.13/package/package.json not in flight; writing
+45 verbose afterAdd /home/dikdik/.npm/mongoskin/1.4.13/package/package.json written
+46 silly install resolved [ { name: 'mongoskin',
+46 silly install resolved     description: 'The future layer above node-mongodb-native',
+46 silly install resolved     version: '1.4.13',
+46 silly install resolved     author: { name: 'Gui Lin', email: 'guileen@gmail.com' },
+46 silly install resolved     homepage: 'https://github.com/kissjs/node-mongoskin',
+46 silly install resolved     repository:
+46 silly install resolved      { type: 'git',
+46 silly install resolved        url: 'git://github.com/kissjs/node-mongoskin.git' },
+46 silly install resolved     bugs: { url: 'https://github.com/kissjs/node-mongoskin/issues' },
+46 silly install resolved     main: './index.js',
+46 silly install resolved     keywords: [ 'mongodb', 'database', 'nosql' ],
+46 silly install resolved     engines: { node: '>= 0.4.0' },
+46 silly install resolved     peerDependencies: { mongodb: '~1.4' },
+46 silly install resolved     devDependencies:
+46 silly install resolved      { mocha: '~1.17.1',
+46 silly install resolved        blanket: '~1.1.6',
+46 silly install resolved        coveralls: '~2.10.0',
+46 silly install resolved        'mocha-lcov-reporter': '0.0.1',
+46 silly install resolved        'travis-cov': '~0.2.5',
+46 silly install resolved        mongodb: '~1.4',
+46 silly install resolved        should: '~3.1.2' },
+46 silly install resolved     config: { blanket: [Object], 'travis-cov': [Object] },
+46 silly install resolved     scripts: { test: 'mocha -R travis-cov' },
+46 silly install resolved     directories: { example: './examples', lib: './lib/mongoskin' },
+46 silly install resolved     license: 'MIT',
+46 silly install resolved     contributors:
+46 silly install resolved      [ [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object],
+46 silly install resolved        [Object] ],
+46 silly install resolved     gitHead: '8dcf669ff808463191033cc1e3917caa2bc41984',
+46 silly install resolved     _id: 'mongoskin@1.4.13',
+46 silly install resolved     _shasum: '1deec5b5dcc25180a9a19c59956c098f8c12ee7d',
+46 silly install resolved     _from: 'mongoskin@*',
+46 silly install resolved     _npmVersion: '2.5.1',
+46 silly install resolved     _nodeVersion: '0.12.0',
+46 silly install resolved     _npmUser: { name: 'vkarpov15', email: 'val@karpov.io' },
+46 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: '1deec5b5dcc25180a9a19c59956c098f8c12ee7d',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/mongoskin/-/mongoskin-1.4.13.tgz' },
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/mongoskin/-/mongoskin-1.4.13.tgz',
+46 silly install resolved     readme: 'ERROR: No README data found!' } ]
+47 info install mongoskin@1.4.13 into /home/dikdik/nodeapp
+48 info installOne mongoskin@1.4.13
+49 verbose installOne of mongoskin to /home/dikdik/nodeapp not in flight; installing
+50 verbose lock using /home/dikdik/.npm/_locks/mongoskin-d11498f366e18a17.lock for /home/dikdik/nodeapp/node_modules/mongoskin
+51 silly install write writing mongoskin 1.4.13 to /home/dikdik/nodeapp/node_modules/mongoskin
+52 verbose unbuild node_modules/mongoskin
+53 info preuninstall mongoskin@1.4.13
+54 info uninstall mongoskin@1.4.13
+55 verbose unbuild rmStuff mongoskin@1.4.13 from /home/dikdik/nodeapp/node_modules
+56 info postuninstall mongoskin@1.4.13
+57 silly gentlyRm /home/dikdik/nodeapp/node_modules/mongoskin is being purged from base /home/dikdik/nodeapp
+58 verbose gentlyRm don't care about contents; nuking /home/dikdik/nodeapp/node_modules/mongoskin
+59 silly vacuum-fs purging /home/dikdik/nodeapp/node_modules/mongoskin
+60 silly vacuum-fs quitting because other entries in /home/dikdik/nodeapp/node_modules
+61 verbose tar unpack /home/dikdik/.npm/mongoskin/1.4.13/package.tgz
+62 verbose tar unpacking to /home/dikdik/nodeapp/node_modules/mongoskin
+63 silly gentlyRm /home/dikdik/nodeapp/node_modules/mongoskin is being purged
+64 verbose gentlyRm don't care about contents; nuking /home/dikdik/nodeapp/node_modules/mongoskin
+65 silly gunzTarPerm modes [ '775', '664' ]
+66 silly gunzTarPerm extractEntry package.json
+67 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+68 silly gunzTarPerm extractEntry .npmignore
+69 silly gunzTarPerm extractEntry LICENSE
+70 silly gunzTarPerm extractEntry index.js
+71 silly gunzTarPerm extractEntry Readme.md
+72 silly gunzTarPerm extractEntry History.md
+73 silly gunzTarPerm extractEntry Makefile
+74 silly gunzTarPerm extractEntry .jshintrc
+75 silly gunzTarPerm extractEntry examples/admin.js
+76 silly gunzTarPerm extractEntry examples/close.js
+77 silly gunzTarPerm extractEntry examples/config.js
+78 silly gunzTarPerm extractEntry examples/generateId.js
+79 silly gunzTarPerm extractEntry examples/gridfs.js
+80 silly gunzTarPerm extractEntry examples/insert.js
+81 silly gunzTarPerm extractEntry examples/replSetBenchmark.js
+82 silly gunzTarPerm extractEntry examples/replset.js
+83 silly gunzTarPerm extractEntry examples/update.js
+84 silly gunzTarPerm extractEntry .travis.yml
+85 silly gunzTarPerm extractEntry lib/admin.js
+86 silly gunzTarPerm extractEntry lib/constant.js
+87 silly gunzTarPerm extractEntry lib/cursor.js
+88 silly gunzTarPerm extractEntry lib/db.js
+89 silly gunzTarPerm extractEntry lib/collection.js
+90 silly gunzTarPerm extractEntry lib/grid_store.js
+91 silly gunzTarPerm extractEntry lib/helper.js
+92 silly gunzTarPerm extractEntry lib/index.js
+93 silly gunzTarPerm extractEntry lib/mongo_client.js
+94 silly gunzTarPerm extractEntry lib/utils.js
+95 silly gunzTarPerm extractEntry lib/grid.js
+96 silly gunzTarPerm extractEntry AUTHORS
+97 verbose write writing to /home/dikdik/nodeapp/node_modules/mongoskin/package.json
+98 info preinstall mongoskin@1.4.13
+99 verbose readDependencies loading dependencies from /home/dikdik/nodeapp/node_modules/mongoskin/package.json
+100 silly prepareForInstallMany adding mongodb@~1.4 from mongoskin peerDependencies
+101 warn peerDependencies The peer dependency mongodb@~1.4 included from mongoskin will no
+102 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+103 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+104 verbose readDependencies loading dependencies from /home/dikdik/nodeapp/node_modules/mongoskin/package.json
+105 silly install resolved []
+106 verbose about to build /home/dikdik/nodeapp/node_modules/mongoskin
+107 info build /home/dikdik/nodeapp/node_modules/mongoskin
+108 info linkStuff mongoskin@1.4.13
+109 silly linkStuff mongoskin@1.4.13 has /home/dikdik/nodeapp/node_modules as its parent node_modules
+110 verbose linkBins mongoskin@1.4.13
+111 verbose linkMans mongoskin@1.4.13
+112 verbose rebuildBundles mongoskin@1.4.13
+113 info install mongoskin@1.4.13
+114 info postinstall mongoskin@1.4.13
+115 verbose readDependencies loading dependencies from /home/dikdik/nodeapp/package.json
+116 verbose targetResolver reading package data from /home/dikdik/nodeapp/node_modules/body-parser/package.json
+117 verbose targetResolver reading package data from /home/dikdik/nodeapp/node_modules/ejs/package.json
+118 verbose targetResolver reading package data from /home/dikdik/nodeapp/node_modules/express/package.json
+119 verbose targetResolver reading package data from /home/dikdik/nodeapp/node_modules/express-session/package.json
+120 verbose targetResolver reading package data from /home/dikdik/nodeapp/node_modules/mongodb/package.json
+121 verbose targetResolver reading package data from /home/dikdik/nodeapp/node_modules/mongoskin/package.json
+122 verbose already installed skipping mongodb@~1.4 /home/dikdik/nodeapp
+123 silly install resolved []
+124 verbose unlock done using /home/dikdik/.npm/_locks/mongoskin-d11498f366e18a17.lock for /home/dikdik/nodeapp/node_modules/mongoskin
+125 verbose validateInstall loading /home/dikdik/nodeapp/package.json for validation
+126 verbose stack Error: The package mongodb does not satisfy its siblings' peerDependencies requirements!
+126 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+126 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:267:7
+126 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+126 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+126 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+126 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+126 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+126 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+126 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+126 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+127 verbose cwd /home/dikdik/nodeapp
+128 error Linux 3.19.0-25-generic
+129 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "mongoskin"
+130 error node v0.12.7
+131 error npm  v2.11.3
+132 error code EPEERINVALID
+133 error peerinvalid The package mongodb does not satisfy its siblings' peerDependencies requirements!
+133 error peerinvalid Peer mongoskin@1.4.13 wants mongodb@~1.4
+134 verbose exit [ 1, true ]

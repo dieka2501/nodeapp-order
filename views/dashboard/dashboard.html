@@ -1,0 +1,49 @@
+
+<div class="row">
+	<h1>Produk</h1>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<a href="/produk/add"><button class="btn btn-primary">Add Item</button></a>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-hover">
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>ID</th>
+					<th>Nama Produk</th>
+					<th>Stock</th>
+					<th>Harga</th>
+					<th>Tanggal Masuk</th>
+					<th>Tanggal Update</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+			<% var i=0;%>
+			<% id.forEach(function(el,index){ %>
+			<% i++;%>
+				<tr>
+					<td><%=i %></td>
+					<td><%=id[index]%></td>
+					<td><%=nama_produk[index] %></td>
+					<td><%=stock[index]%></td>
+					<td><%=harga[index]%></td>
+					<td><%=date_insert[index]%></td>
+					<td><%=date_update[index]%></td>
+					<td>
+						<div class="form-group">
+							<a href="/produk/update?id=<%=id[index]%>"><button class='btn btn-warning btn-xs'> Edit</button></a>
+							<a onclick="if(!confirm('Are You Sure?')) return false;" href="/delete?id=<%=id[index]%>" class='btn btn-danger btn-xs'> Delete</a>	
+						</div>
+					</td>
+				</tr>
+
+			<% });%>
+			</tbody>
+		</table>		
+	</div>
+</div>
